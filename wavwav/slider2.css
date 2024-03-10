@@ -28,12 +28,12 @@
         }
         .slider-box .btn-prev{
 
-            background: #fff url("/image/board/prev.png") no-repeat center;
+            background: #fff url("image/board/prev.png") no-repeat center;
             background-size: contain;
         }
         .slider-box .btn-next{
 
-            background: #fff url("/image/board/next.png") no-repeat center;
+            background: #fff url("image/board/next.png") no-repeat center;
             background-size: contain;
         }
 
