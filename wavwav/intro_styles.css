@@ -1,0 +1,246 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+header {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  background-color: #00ff0000;
+  color: black;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid black;
+  z-index: 10;
+}
+
+#background {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: auto;
+  background-image: url('/img/WEB1.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: -1;
+  height: 100%;
+}
+/*#WAVING_CITY {
+  position: absolute;
+  left: 8.5%;
+  top: 32%;
+  font-family: 'Abril Fatface', serif;
+  font-size: 100px;
+  color: rgba(255, 255, 255, 1);
+  line-height: 105%;
+}*/
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#WAVING_CITY {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+nav ul li a img {
+  width: 50px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  margin: 0 10px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+main {
+  background-color: rgba(243,243,243);
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 780px;
+  padding-top: 50px;
+}
+
+.gallery-wrap {
+  background-color: rgba(243,243,243 ,1);
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+  width: 100%;
+  height: 480px;
+  background: url("/img/museumback.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 0;
+}
+
+.gallery-item {
+  width: 300px;
+  margin: 20px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(243, 243, 243, 1);
+  transition: all 0.3s ease;
+  height: 400px;
+}
+
+.gallery-item:hover {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  background-color: rgba(243, 243, 243, 0.6);
+}
+
+.title {
+  justify-content: center;
+  padding: 10px;
+  display: flex;
+}
+
+.title {
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+.caption {
+  font-size: 18px;
+  margin: 10px;
+  font-weight: lighter;
+}
+.more {
+  background-color: #222;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.more:hover {
+  background-color: #fff;
+  color: #222;
+  cursor: pointer;
+}
+
+.slider {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.slider img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.slider img:first-child {
+  z-index: 1;
+}
+
+.prev, .next {
+  position: absolute;
+  top: 25%;
+  transform: translateY(-50%);
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+
+.slider-box .pagination{
+
+  background: transparent;
+  position: absolute;
+  bottom: 0;
+  z-index: 500;
+
+  display: flex;
+  gap: 5px;
+  height: 15px;
+
+}
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.pagination-item {
+  margin: 0 5px;
+  padding: 5px 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.pagination-item:hover {
+  background-color: #ddd;
+}
+
+.pagination-item.active {
+  background-color: #000;
+  color: #fff;
+}
+
+
+.logo-container{
+  animation: fade-in 2s ease;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
