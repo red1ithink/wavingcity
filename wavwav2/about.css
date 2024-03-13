@@ -1,0 +1,122 @@
+.about-wrap {
+    position: relative;
+    width: 80%;
+    height: 500px;
+    background-color: rgb(243, 243, 243);
+  }
+  
+  .background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("img/about-background.jpg");
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+  }
+  
+  .content-container {
+    background-color: rgb(243, 243, 243);
+    max-width: 100%;
+    position: relative;
+    z-index: 1;
+    padding: 50px;
+    margin: 0 auto;
+  }
+  
+  .about-wrap h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .about-wrap p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+  
+  .team-section {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .team-member {
+    width: 50%;
+    text-align: center;
+    float: left; /* float 스타일 제거 (flex 사용 권장) */
+  }
+  
+  .team-member img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+  
+  .team-member p {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+  
+  /* 스크롤 애니메이션 효과 추가 */
+  
+.about-wrap:in-viewport .team-section {
+  opacity: 1;
+  transform: translateY(0);
+  animation: fade-in 1s ease; /* 추가된 부분 */
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.team-member {
+  animation: slide-in 2s ease;
+}
+
+@keyframes slide-in {
+  from {
+    transform: translateX(-50%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+  
+
+  .more {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    width: 100%;
+    padding: 10px 20px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    margin-top: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .more:hover {
+    background-color: #fff;
+    color: #000;
+    cursor: pointer;
+  }
+
+  
+  
