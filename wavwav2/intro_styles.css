@@ -4,6 +4,10 @@
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+  background-color: rgba(243,243,243 ,1);
+}
 body {
   font-family: Arial, sans-serif;
 }
@@ -20,8 +24,6 @@ header {
   align-items: center;
   border-bottom: 1px solid black;
   z-index: 10;
-  display: none
-
 }
 
 #background {
@@ -78,10 +80,12 @@ nav ul li {
   margin: 0 10px;
 }
 
+
 nav ul li a {
   color: #fff;
   text-decoration: none;
   font-size: 16px;
+  padding: 20px;
 }
 
 main {
@@ -105,7 +109,7 @@ main {
   padding: 20px;
   width: 100%;
   height: 480px;
-  background: url("/img/room.png");
+  background: url("img/room.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -263,7 +267,7 @@ main {
 
 
 .products-wrap {
-  background-image: url('img/room.png');
+  background-image: url('/img/room.png');
   margin-top: 60px; /* 위 div와의 간격 설정 */
   display: flex;
   flex-wrap: wrap; /* 여러 줄로 나열 */
