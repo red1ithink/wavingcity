@@ -30,7 +30,7 @@ header {
   top: 0;
   width: 100%;
   height: auto;
-  background-image: url('img/WEB1.png');
+  background-image: url('img/WEB1.jpeg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -263,7 +263,7 @@ main {
 
 
 .products-wrap {
-  background-image: url('/img/room.png');
+  background-image: url('img/room.png');
   margin-top: 60px; /* 위 div와의 간격 설정 */
   display: flex;
   flex-wrap: wrap; /* 여러 줄로 나열 */
