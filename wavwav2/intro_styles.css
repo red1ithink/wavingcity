@@ -342,7 +342,7 @@ main {
 .Pro22 {
   right: 0%;
   top: 10%;
-  width: 70%;
+  width: 100%;
   display: flex;
   flex-direction: row;
   align-items: center;
