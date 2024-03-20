@@ -285,7 +285,7 @@ main {
 .product-p {
   font-size: 36px;
   width: 100%;
-  margin-left: -100px;
+  margin-left: -108px;
   padding-bottom: 30px;
   /*animation: slider 1s ease-in-out forwards;*/
   position: relative; /* Added to enable left property */
