@@ -1,316 +1,140 @@
-.about-wrap {
-    position: relative;
-    width: 100%;
-    height: auto;
-    background-color: #f5f5f5;
-    margin-top: 50px;
-  }
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
-  
-  .content-container {
-    max-width: 100%;
-    height: auto;
-    position: relative;
-    z-index: 1;
-    max-width: 1400px;
-    margin: 0 auto;
-    justify-content: center;
-  }
+html {
+  scroll-behavior: smooth;
+  background-color: rgba(243,243,243 ,1);
+}
+body {
+  font-family: Arial, sans-serif;
+}
 
-.section-container {
-  width:100%;
+header {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  background-color: #00ff0000;
+  color: black;
+  padding: 13px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0);
+  z-index: 10;
+}
+
+#border {
+  border-radius:15px 15px 0px 0px
+}
+
+#background {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: auto;
+  background-image: url('img/background1.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: -1;
+  height: 100%;
+  background-color: rgba(243,243,243 ,1);
+}
+/*#WAVING_CITY {
+  position: absolute;
+  left: 8.5%;
+  top: 32%;
+  font-family: 'Abril Fatface', serif;
+  font-size: 100px;
+  color: rgba(255, 255, 255, 1);
+  line-height: 105%;
+}*/
+.logo-container {
   display: flex;
   justify-content: center;
-  text-align: center;
+  align-items: center;
 }
-  
-  
-  .about-wrap h2 {
-    font-size: 32px;
-    margin-bottom: 20px;
-  }
-  
-  .about-wrap p1 {
-    font-size: 16px;
-    line-height: 1.5;
-    margin-bottom: 20px;
-  }
-  
-  .team-section {
-    position: relative;
-    flex-direction: row;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 100%;
-    text-align: center;
-    height: auto;
-    margin-top: 20px;
-  }
-
-
-.team_member1 img, .team_member2 img, .team_member3 img, .team_member4 img {
+#WAVING_CITY {
   position: absolute;
-  width: 50%;
-  height: auto;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.logo-container img {
+  width: 250px; /* 최대 너비 */
+  height: auto; /* 높이 자동 조정 */
+}
+
+
+nav ul li a img {
+  width: 50px;
+}
+
+nav ul {
   display: flex;
+  list-style: none;
 }
-.team_member1, .team_member2, .team_member3, .team_member4 {
-  width: 50%;
+
+nav ul li {
+  margin: 0px 0px;
+}
+
+
+nav ul li a {
+  color: black;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 20px;
+}
+
+main {
+  background-color: rgba(243,243,243,1);
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 720px;
+  padding-top: 7px;
+  width: 100%;
   height: auto;
 }
 
-@media (min-width: 1200px){
-  .team-section {
-    position: relative;
-    flex-direction: row;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 100%;
-    text-align: center;
-    height: auto;
-  }
+.up-wrap {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 60px;
+}
 
-  .about-wrap h2 {
-    margin-left: 10px;
-  }
-
-  .about-wrap p1 {
-    margin-left: 10px;
-  }
-
-  .team_member1 img, .team_member2 img, .team_member3 img, .team_member4 img {
-    position: absolute;
-    width: 300px;
-    height: 300px;
-    display: flex;
-  }
-  .team_member1, .team_member2, .team_member3, .team_member4 {
-    width: 300px;
-    height: 300px;
-  }
+.up {
+  width: 40px;
+  height: auto;
 }
 
 
+.more {
+  background-color: #222;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
 
-  @media (min-width: 1000px) and (max-width: 1200px){
-    .team-section {
-      position: relative;
-      flex-direction: row;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      width: 100%;
-      text-align: center;
-      height: auto;
-    }
+.more:hover {
+  background-color: #fff;
+  color: #222;
+  cursor: pointer;
+}
 
-    .about-wrap h2 {
-      margin-left: 10px;
-    }
 
-    .about-wrap p1 {
-      margin-left: 10px;
-    }
-
-    .team_member1 img, .team_member2 img, .team_member3 img, .team_member4 img {
-      position: absolute;
-      width: 250px;
-      height: 250px;
-      display: flex;
-    }
-    .team_member1, .team_member2, .team_member3, .team_member4 {
-      width: 250px;
-      height: 250px;
-    }
-  }
-
-  @media (min-width: 800px) and (max-width: 1000px) {
-    .about-wrap h2 {
-      font-size: 32px;
-      margin-bottom: 20px;
-      margin-left: 10px;
-    }
-    
-    .about-wrap p1 {
-      font-size: 16px;
-      line-height: 1.5;
-      margin-bottom: 20px;
-      margin-left: 10px;
-    }
-    .team-section {
-      position: relative;
-      flex-direction: row;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      text-align: center;
-      width: 500px;
-      height: auto;
-    }
-    .team_member1 img, .team_member2 img, .team_member3 img, .team_member4 img {
-      position: absolute;
-      width: 250px;
-      height: 250px;
-      display: flex;
-    }
-    .team_member1, .team_member2, .team_member3, .team_member4 {
-      width: 250px;
-      height: 250px;
-    }
-
-    .content-container {
-      max-width: 100%;
-      height: auto;
-      position: relative;
-      z-index: 1;
-      max-width: 1200px;
-      margin: 0 auto;
-      justify-content: center;
-    }
-  }
-
-  @media (max-width: 800px) and (min-width: 500px) {
-    .about-wrap h2 {
-      font-size: 32px;
-      margin-bottom: 20px;
-      margin-left: 10px;
-    }
-    
-    .about-wrap p1 {
-      font-size: 16px;
-      line-height: 1.5;
-      margin-bottom: 20px;
-      margin-left: 10px;
-    }
-    .team-section {
-      position: relative;
-      flex-direction: row;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      width: 500px;
-      text-align: center;
-      height: auto;
-    }
-    .team_member1 img, .team_member2 img, .team_member3 img, .team_member4 img {
-      position: absolute;
-      width: 230px;
-      height: 230px;
-      display: flex;
-    }
-    .team_member1, .team_member2, .team_member3, .team_member4 {
-      width: 230px;
-      height: 230px;
-    }
-
-    .content-container {
-      max-width: 100%;
-      height: auto;
-      position: relative;
-      z-index: 1;
-      max-width: 1200px;
-      margin: 0 auto;
-      justify-content: center;
-    }
-  }
-
-  @media (min-width: 400px) and (max-width: 500px) {
-    .about-wrap h2 {
-      font-size: 32px;
-      margin-bottom: 20px;
-      margin-left: 10px;
-    }
-    
-    .about-wrap p1 {
-      font-size: 16px;
-      line-height: 1.5;
-      margin-bottom: 20px;
-      margin-left: 10px;
-    }
-    .team-section {
-      position: relative;
-      flex-direction: row;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      width: 400px;
-      text-align: center;
-      height: auto;
-    }
-    .team_member1 img, .team_member2 img, .team_member3 img, .team_member4 img {
-      position: absolute;
-      width: 200px;
-      height: 200px;
-      display: flex;
-    }
-    .team_member1, .team_member2, .team_member3, .team_member4 {
-      width: 200px;
-      height: 200px;
-    }
-
-    .content-container {
-      max-width: 100%;
-      height: auto;
-      position: relative;
-      z-index: 1;
-      max-width: 1200px;
-      margin: 0 auto;
-      justify-content: center;
-    }
-  }
-  @media (max-width: 400px){
-    .about-wrap h2 {
-      font-size: 32px;
-      margin-bottom: 20px;
-      margin-left: 10px;
-    }
-    
-    .about-wrap p1 {
-      font-size: 16px;
-      line-height: 1.5;
-      margin-bottom: 20px;
-      margin-left: 10px;
-    }
-    .team-section {
-      position: relative;
-      flex-direction: row;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      width: 360px;
-      text-align: center;
-      height: auto;
-    }
-    .team_member1 img, .team_member2 img, .team_member3 img, .team_member4 img {
-      position: absolute;
-      width: 180px;
-      height: 180px;
-      display: flex;
-    }
-    .team_member1, .team_member2, .team_member3, .team_member4 {
-      width: 180px;
-      height: 180px;
-    }
-
-    .content-container {
-      max-width: 100%;
-      height: auto;
-      position: relative;
-      z-index: 1;
-      max-width: 1200px;
-      margin: 0 auto;
-      justify-content: center;
-    }
-  }
-  
-  /* 스크롤 애니메이션 효과 추가 */
-  
-.about-wrap:in-viewport .team-section {
-  opacity: 1;
-  transform: translateY(0);
-  animation: fade-in 1s ease; /* 추가된 부분 */
+.logo-container{
+  animation: fade-in 2s ease;
 }
 
 @keyframes fade-in {
@@ -322,24 +146,213 @@
   }
 }
 
-.team-member {
-  animation: slide-in 2s ease;
+
+.product-title1 {
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
 }
 
-@keyframes slide-in {
+
+.product-p {
+  font-size: 36px;
+  width: 100%;
+  margin-left: -108px;
+  padding-bottom: 30px;
+  margin-bottom: 10px;
+  /*animation: slider 1s ease-in-out forwards;*/
+  position: relative; /* Added to enable left property */
+  left: 108px;
+  opacity: 0;
+  transition: all 1s;
+}
+
+@keyframes slider {
   from {
-    transform: translateX(-50%);
+    left: -100px;
     opacity: 0;
   }
   to {
-    transform: translateX(0);
+    left: 108px;
     opacity: 1;
   }
 }
 
-  
+.products-wrap {
+  background-color: rgba(243,243,243 ,1);
+  margin-top: 1000px; /* 위 div와의 간격 설정 */
+  display: flex;
+  flex-wrap: wrap; /* 여러 줄로 나열 */
+  justify-content: space-between; /* 양쪽 끝 정렬 */
+  margin: 0 auto;
+  width: 100%; /* 쇼핑몰 제품 사진 영역 너비 조절 */
+  max-height: auto;
+  margin-bottom: 70px;
+  z-index: 0;
+}
 
-.more {
+.pro1, .pro2, .pro3, .pro4 { /* 각 제품 박스 스타일 */
+  background-color: #f5f5f5; /* 배경색 */
+  text-align: center; /* 내용 가운데 정렬 */
+  width: calc(25%); /* 너비 계산 (여백 포함) */
+  max-height: 20%;
+}
+
+.pro1 img, .pro2 img, .pro3 img, .pro4 img {
+  width: 100%; /* 이미지 너비 꽉 채움 */
+  height: 100%; /* 이미지 높이 자동 조절 */
+  margin-bottom: 10px; /* 이미지 하단 여백 */
+}
+
+.pro1 h1, .pro2 h1, .pro3 h1, .pro4 h1 {
+  font-size: 18px; /* 제품 타이틀 글씨 크기 */
+  margin-bottom: 5px; /* 타이틀 하단 여백 */
+}
+
+.pro1:hover, .pro2:hover, .pro3:hover, .pro4:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* 그림자 효과 강조 */
+    transition: all 0.3s ease;
+}
+
+.pro1 h2, .pro2 h2, .pro3 h2, .pro4 h2 {
+  font-size: 14px; /* 설명 글씨 크기 */
+  color: #888; /* 설명 글씨 색 */
+}
+
+
+.detail {
+  font-size: 36px;
+  width: 100%;
+  margin-left: -100px;
+  padding-bottom: 30px;
+  animation: slider 1s ease-in-out forwards; /* Added animation-name, timing function, and fill mode */
+  position: relative; /* Added to enable left property */
+}
+
+.products-wrap2 {
+  position: relative;
+  top: 100px;
+  width: 100%;
+  height: auto;
+  background-color: rgba(243,243,243 ,1);
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+
+.product1, .product2, .product3, .product4 {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  margin-top: 30px;
+}
+
+
+.Pro12 {
+  top: 0%;
+  left: 50%;
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.Pro22 {
+  right: 0%;
+  top: 10%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.Pro32 {
+  top: 20%;
+  left: 50%;
+  width: 80%;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.Pro42 {
+  right: 0%;
+  top: 30%;
+  width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.image-container {
+  width: 50%;
+  flex: 1;
+}
+
+.text-container {
+  flex: 1;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center
+}
+
+.products-wrap2 h2, .products-wrap2 h2, .products-wrap2 h2, .products-wrap2 h2 {
+  font-size: 18px; /* 설명 글씨 크기 */
+  color: #888; /* 설명 글씨 색 */
+}
+
+.products-wrap2 h1 {
+  font-size: 20px;
+}
+
+.products-wrap2 h3 {
+  font-size: 14px;
+  color: #888;
+}
+
+.Pro22, .Pro42 {
+  margin-left: auto
+}
+
+
+.room-container {
+  position: relative;
+  width: 100%;
+  height: auto;
+  align-items: center;
+}
+
+@media (max-width: 576px) {
+  .products-wrap2 h2, .products-wrap2 h2, .products-wrap2 h2, .products-wrap2 h2 {
+    font-size: 12px; /* 설명 글씨 크기 */
+    color: #888; /* 설명 글씨 색 */
+  }
+  .products-wrap2 h3 {
+    font-size: 10px;
+  }
+  .products-wrap2 h1 {
+    font-size: 14px;
+  }
+}
+
+
+
+.button-wrap {
+  position: relative;
+  width: 100%;
+  align-items: center;
+  background-color: #f5f5f5;
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+
+.buy {
   background-color: #000;
   color: #f5f5f5;
   border: none;
@@ -350,29 +363,10 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 10px;
-  margin-top: 30px;
 }
-  
-.more:hover {
+
+.buy:hover {
   background-color: #f5f5f5;
   color: #000;
   cursor: pointer;
 }
-
-.member {
-  opacity: 0;
-  transition: opacity 0.5s; /* Adding transition for smooth animation */
-}
-
-/* Apply opacity change on hover */
-.team_member1:hover .member,
-.team_member2:hover .member,
-.team_member3:hover .member,
-.team_member4:hover .member {
-  opacity: 1;
-}
-
-
-
-  
