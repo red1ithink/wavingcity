@@ -171,7 +171,7 @@
     }
   }
 
-  @media (max-width: 800px){
+  @media (max-width: 800px) and (min-width: 500px) {
     .about-wrap h2 {
       font-size: 32px;
       margin-bottom: 20px;
@@ -203,6 +203,95 @@
     .team_member1, .team_member2, .team_member3, .team_member4 {
       width: 230px;
       height: 230px;
+    }
+
+    .content-container {
+      max-width: 100%;
+      height: auto;
+      position: relative;
+      z-index: 1;
+      max-width: 1200px;
+      margin: 0 auto;
+      justify-content: center;
+    }
+  }
+
+  @media (min-width: 400px) and (max-width: 500px) {
+    .about-wrap h2 {
+      font-size: 32px;
+      margin-bottom: 20px;
+      margin-left: 10px;
+    }
+    
+    .about-wrap p1 {
+      font-size: 16px;
+      line-height: 1.5;
+      margin-bottom: 20px;
+      margin-left: 10px;
+    }
+    .team-section {
+      position: relative;
+      flex-direction: row;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      width: 400px;
+      text-align: center;
+      height: auto;
+    }
+    .team_member1 img, .team_member2 img, .team_member3 img, .team_member4 img {
+      position: absolute;
+      width: 200px;
+      height: 200px;
+      display: flex;
+    }
+    .team_member1, .team_member2, .team_member3, .team_member4 {
+      width: 200px;
+      height: 200px;
+    }
+
+    .content-container {
+      max-width: 100%;
+      height: auto;
+      position: relative;
+      z-index: 1;
+      max-width: 1200px;
+      margin: 0 auto;
+      justify-content: center;
+    }
+  }
+  @media (max-width: 400px){
+    .about-wrap h2 {
+      font-size: 32px;
+      margin-bottom: 20px;
+      margin-left: 10px;
+    }
+    
+    .about-wrap p1 {
+      font-size: 16px;
+      line-height: 1.5;
+      margin-bottom: 20px;
+      margin-left: 10px;
+    }
+    .team-section {
+      position: relative;
+      flex-direction: row;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      width: 360px;
+      text-align: center;
+      height: auto;
+    }
+    .team_member1 img, .team_member2 img, .team_member3 img, .team_member4 img {
+      position: absolute;
+      width: 180px;
+      height: 180px;
+      display: flex;
+    }
+    .team_member1, .team_member2, .team_member3, .team_member4 {
+      width: 180px;
+      height: 180px;
     }
 
     .content-container {
@@ -283,7 +372,3 @@
 .team_member4:hover .member {
   opacity: 1;
 }
-
-
-
-  
