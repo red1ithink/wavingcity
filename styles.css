@@ -157,13 +157,10 @@
     font-optical-sizing: auto;
     font-weight: 500; /* 적당한 굵기 */
   }
-  
-  .eb-garamond-director {
-    font-weight: 600; /* 조금 더 굵은 폰트 */
-  }
-  
-  .eb-garamond-designer {
-    font-weight: 700; /* 굵게 강조된 폰트 */
+  .eb-garamond-producer1, .eb-garamond-director1, .eb-garamond-designer1 {
+    font-family: 'EB Garamond', serif;
+    font-optical-sizing: auto;
+    font-weight: 600; /* 적당한 굵기 */
   }
   
   
