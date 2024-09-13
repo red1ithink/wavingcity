@@ -1,0 +1,224 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    background-image: url('img/back.jpg');
+  }
+  
+  header {
+    background-color: #111;
+    padding: 10px 0; /* 패딩은 위아래만 적용 */
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between; /* 로고와 메뉴를 양 끝으로 배치 */
+    align-items: center;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 20px; /* 화면 좌우 여백을 줘서 공간 확보 */
+  }
+  
+  .logo img {
+    width: 50px; /* 원하는 너비 설정 */
+    height: auto; /* 비율에 맞게 높이를 자동으로 조정 */
+  }
+  
+  
+  nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+  }
+  
+  nav ul li {
+    margin-left: 20px; /* 메뉴 간격 조정 */
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    color: #ff4081;
+  }
+  
+  
+  .hero-section {
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url('.jpg') center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    animation: fadeIn 2s ease;
+    margin-top: 50px; /* 헤더 높이와 맞추기 위해 마진 추가 */
+  }
+  
+  .hero-content {
+    max-width: 700px;
+  }
+  
+  .hero-section h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+    animation: slideInDown 1s ease;
+  }
+  
+  .hero-section p {
+    font-size: 24px;
+    margin-bottom: 40px;
+    color: #111;
+  }
+  
+  .cta-btn {
+    display: inline-block;
+    padding: 10px 25px; /* 버튼 사이즈 축소 */
+    background-color: #333; /* 어두운 도시적인 컬러 */
+    color: white;
+    text-decoration: none;
+    font-size: 16px; /* 폰트 크기 줄이기 */
+    border: 2px solid #fff;
+    border-radius: 0; /* 사각형 버튼 */
+    transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease;
+    text-transform: uppercase; /* 대문자 텍스트 */
+    letter-spacing: 2px; /* 글자 간격 유지 */
+  }
+  
+  .cta-btn:hover {
+    background-color: #555; /* 어두운 회색으로 색상 변경 */
+    color: #fff;
+    border-color: #555; /* 테두리도 호버 시 동일한 어두운 색으로 변경 */
+  }
+  
+  
+  
+  .section {
+    padding: 10px 20px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.3);
+    margin-top: 100px;
+  }
+  
+  .container {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  h1 {
+    font-size: 36px;
+    margin: 10px 0 20px 0; /* 위쪽 마진을 10px로 줄임 */
+    color: #111;
+  }
+  
+  p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color:#0a0a0a;
+  }
+  
+  video {
+    max-width: 100%;
+    margin: 20px 0;
+  }
+  
+  .team-info {
+    display: flex;
+    justify-content: space-around;
+    text-align: left;
+  }
+  
+  .member-info {
+    width: 30%;
+  }
+  
+  h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #0d0d0d;
+  }
+  
+  footer {
+    background-color: #111;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideInDown {
+    0% {
+      transform: translateY(-100px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  .music_container {
+    display: flex;                /* 아이콘들을 가로로 배치 */
+    justify-content: center;      /* 컨테이너 중앙 정렬 */
+    gap: 24px;                    /* 아이콘 간의 간격 */
+    padding-top: 10px;
+  }
+  
+  .music_icon {
+    background: none;             /* 버튼 배경 제거 */
+    border: none;                 /* 버튼 테두리 제거 */
+    cursor: pointer;              /* 커서를 포인터로 변경 */
+    padding: 0;                   /* 기본 패딩 제거 */
+  }
+  
+  .music_icon img {
+    width: 20px;                  /* 아이콘의 가로 크기 */
+    height: 20px;                 /* 아이콘의 세로 크기 */
+    object-fit: contain;          /* 이미지가 아이콘 크기에 맞춰지도록 설정 */
+  }
+
+  .more {
+    background-color: #000;
+    color: #f5f5f5;
+    border: none;
+    width: 80%;
+    padding: 10px 20px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    z-index: 999;
+    transform: translate(0, 50%);
+  }
+  
+  .more:hover {
+    background-color: #555; /* 어두운 회색으로 색상 변경 */
+    color: #fff;
+    cursor: pointer;
+  }
