@@ -139,13 +139,20 @@
   
   .team-info {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between; /* 각 멤버 간에 균등한 간격 배치 */
+    align-items: flex-start;        /* 상단 정렬 */
+    gap: 20px;                      /* 멤버들 간 간격 조정 */
+    flex-wrap: wrap;                /* 작은 화면에서는 줄바꿈 되도록 설정 */
     text-align: left;
   }
   
   .member-info {
-    width: 30%;
+    flex: 1;                        /* 각 멤버 정보가 유연하게 공간을 차지 */
+    min-width: 250px;               /* 최소 너비 설정 */
+    max-width: 300px;               /* 최대 너비 설정 */
+    margin: 0 10px;                 /* 좌우 여백 추가 */
   }
+  
   
   h3 {
     font-size: 22px;
@@ -154,11 +161,32 @@
   }
   
   footer {
-    background-color: #111;
-    color: #fff;
+    background-color: #222; /* 어두운 배경 */
+    color: #ccc; /* 연한 회색 텍스트 */
     text-align: center;
-    padding: 5px 0;
+    padding: 20px 0; /* 패딩을 넉넉하게 */
+    position: relative;
+    z-index: 1000;
+    font-size: 14px; /* 세련된 작은 폰트 */
+    letter-spacing: 1px; /* 글자 간격 */
   }
+  
+  footer p {
+    margin: 10px 0;
+  }
+  
+  footer .divider {
+    width: 80%;
+    height: 1px;
+    background-color: #444; /* 구분선 추가 */
+    margin: 15px auto;
+  }
+  
+  footer small {
+    font-size: 12px;
+    color: #777;
+  }
+  
   
   /* Animations */
   @keyframes fadeIn {
@@ -222,3 +250,21 @@
     color: #fff;
     cursor: pointer;
   }
+  .eb-garamond-producer {
+    font-family: "EB Garamond", serif;
+    font-optical-sizing: auto;
+    font-weight: 500; /* 적당한 굵기 */
+  }
+  
+  .eb-garamond-director {
+    font-family: "EB Garamond", serif;
+    font-optical-sizing: auto;
+    font-weight: 600; /* 조금 더 굵은 폰트 */
+  }
+  
+  .eb-garamond-designer {
+    font-family: "EB Garamond", serif;
+    font-optical-sizing: auto;
+    font-weight: 700; /* 굵게 강조된 폰트 */
+  }
+  
