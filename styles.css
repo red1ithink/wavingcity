@@ -152,6 +152,19 @@
     max-width: 300px;               /* 최대 너비 설정 */
     margin: 0 10px;                 /* 좌우 여백 추가 */
   }
+  .eb-garamond-producer, .eb-garamond-director, .eb-garamond-designer {
+    font-family: 'EB Garamond', serif;
+    font-optical-sizing: auto;
+    font-weight: 500; /* 적당한 굵기 */
+  }
+  
+  .eb-garamond-director {
+    font-weight: 600; /* 조금 더 굵은 폰트 */
+  }
+  
+  .eb-garamond-designer {
+    font-weight: 700; /* 굵게 강조된 폰트 */
+  }
   
   
   h3 {
@@ -186,6 +199,7 @@
     font-size: 12px;
     color: #777;
   }
+  
   
   
   /* Animations */
@@ -249,22 +263,5 @@
     background-color: #555; /* 어두운 회색으로 색상 변경 */
     color: #fff;
     cursor: pointer;
-  }
-  .eb-garamond-producer {
-    font-family: "EB Garamond", serif;
-    font-optical-sizing: auto;
-    font-weight: 500; /* 적당한 굵기 */
-  }
-  
-  .eb-garamond-director {
-    font-family: "EB Garamond", serif;
-    font-optical-sizing: auto;
-    font-weight: 600; /* 조금 더 굵은 폰트 */
-  }
-  
-  .eb-garamond-designer {
-    font-family: "EB Garamond", serif;
-    font-optical-sizing: auto;
-    font-weight: 700; /* 굵게 강조된 폰트 */
   }
   
